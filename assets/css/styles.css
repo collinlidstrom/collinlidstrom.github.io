@@ -60,3 +60,17 @@ ul.inline { list-style:none; padding:0; margin:0; display:flex; gap:12px; flex-w
 .theme-toggle:hover {
   background: var(--btn-bg);
 }
+
+/* Date banner styles */
+.date-banner {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
+  letter-spacing: 0.5px;
+  transition: opacity 0.3s ease;
+}
+
+[data-theme="dark"] .date-banner {
+  opacity: 0.8;
+}
