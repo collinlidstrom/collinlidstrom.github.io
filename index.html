@@ -1,112 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Collin L. Lidstrom — Software Engineer</title>
-  <meta name="description" content="Personal site for Collin L. Lidstrom — software engineer. Projects, contact, and links." />
-  <link rel="canonical" href="https://www.collinlidstrom.com/" />
-  <link rel="icon" href="https://www.github.com/fluidicon.png" />
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Collin L. Lidstrom — Software Engineer</title>
+    <meta name="description"
+        content="Personal site for Collin L. Lidstrom — software engineer. Projects, contact, and links." />
+    <link rel="canonical" href="https://www.collinlidstrom.com/" />
+    <link rel="icon" href="https://www.github.com/fluidicon.png" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
+
 <body>
-  
-<nav class="container">
-  <div class="brand"><a href="/">Collin L. Lidstrom</a></div>
-  <div class="links">
-    <a href="/projects/">Projects</a>
-    <a href="/contact/">Contact</a>
-    <a href="https://www.linkedin.com/in/collinlidstrom" rel="me">LinkedIn</a>
-    <a href="https://github.com/collinlidstrom" rel="me">GitHub</a>
-    <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">
-      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-        <path class="sun" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-        <path class="moon" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-      </svg>
-    </button>
-  </div>
-</nav>
 
-  <header class="hero container">
-    <h1>Hi, I’m Collin — I build clean, fast software.</h1>
-    <p>Welcome to my GitHub Pages site. Explore selected projects, reach out, and learn more about my work.</p>
-    <div style="margin-top:18px;">
-      <a class="btn" href="/projects/">Browse projects</a>
-      <a class="btn" href="/contact/" style="margin-left:8px;">Get in touch</a>
-    </div>
-  </header>
+    <nav class="container">
+        <div class="brand"><a href="/">Collin L. Lidstrom</a></div>
+        <div class="links">
+            <a href="/projects/">Projects</a>
+            <a href="/books/">Books</a>
+            <a href="/contact/">Contact</a>
+            <a href="https://www.linkedin.com/in/collinlidstrom" rel="me">LinkedIn</a>
+            <a href="https://github.com/collinlidstrom" rel="me">GitHub</a>
+            <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path class="sun"
+                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                    </path>
+                    <path class="moon"
+                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
 
-  <section class="container">
-    <h2>Highlights</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Recent Work</h3>
-        <p>Short showcase of a recent build or experiment. Replace this with your latest project.</p>
-        <ul class="inline"><li class="badge">TypeScript</li><li class="badge">React</li><li class="badge">Cloudflare</li></ul>
-      </div>
-      <div class="card">
-        <h3>Open Source</h3>
-        <p>Link to a repo you’re proud of, or a contribution highlight.</p>
-        <p><a href="https://github.com/collinlidstrom" class="btn">GitHub Profile</a></p>
-      </div>
-      <div class="card">
-        <h3>Resume</h3>
-        <p>Add a link to a PDF in this repo or Google Drive.</p>
-        <p><a href="#" class="btn">View Resume</a></p>
-      </div>
-    </div>
-  </section>
+    <header class="hero container">
+        <h1>Hi, I’m Collin — I build clean, fast software.</h1>
+        <p>Welcome to my site. Explore selected projects, reach out and learn more about my work.</p>
+        <div style="margin-top:18px;">
+            <a class="btn" href="/projects/">Browse projects</a>
+            <a class="btn" href="/contact/" style="margin-left:8px;">Get in touch</a>
+        </div>
+    </header>
 
-  
-<footer>
-  <div class="container">
-    © <span id="y"></span> Collin L. Lidstrom · <a href="/humans.txt">humans.txt</a> · <a href="/privacy-policy.txt">Privacy</a>
-  </div>
-</footer>
+    <section class="container">
+        <h2>Highlights</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Cloud Infrastructure</h3>
+                <p>Currently developing scalable cloud infrastructure using AWS services, automating deployments with CLI tools and managing Linux-based systems.</p>
+                <ul class="inline">
+                    <li class="badge">AWS</li>
+                    <li class="badge">Linux</li>
+                    <li class="badge">CLI</li>
+                    <li class="badge">DevOps</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>GPT-4 Chat App</h3>
+                <p>A modern chat interface built with Next.js and TypeScript, featuring real-time GPT-4 interactions,
+                    conversation history, and token management.</p>
+                <ul class="inline">
+                    <li class="badge">Next.js</li>
+                    <li class="badge">TypeScript</li>
+                    <li class="badge">OpenAI</li>
+                </ul>
+                <p><a href="https://github.com/collinlidstrom/gpt-4-chat-app" class="btn">View Project</a></p>
+                arset="utf-8" />
+            </div>
+            <div class="card">
+                <h3>Resume</h3>
+                <p>Add a link to a PDF in this repo or Google Drive.</p>
+                <p><a href="#" class="btn">View Resume</a></p>
+            </div>
+        </div>
+    </section>
 
-<script>
-  document.getElementById('y').textContent=new Date().getFullYear();
-  
-  // Theme toggle functionality
-  function toggleTheme() {
-    const html = document.documentElement;
-    const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    
-    // Update icon visibility
-    updateThemeIcon(newTheme);
-  }
-  
-  function updateThemeIcon(theme) {
-    const sunPath = document.querySelector('.theme-toggle .sun');
-    const moonPath = document.querySelector('.theme-toggle .moon');
-    
-    if (theme === 'dark') {
-      sunPath.style.display = 'none';
-      moonPath.style.display = 'block';
-    } else {
-      sunPath.style.display = 'block';
-      moonPath.style.display = 'none';
-    }
-  }
-  
-  // Initialize theme
-  const savedTheme = localStorage.getItem('theme') || 
-    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  document.documentElement.setAttribute('data-theme', savedTheme);
-  updateThemeIcon(savedTheme);
-  
-  // Listen for system theme changes
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (!localStorage.getItem('theme')) {
-      const newTheme = e.matches ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      updateThemeIcon(newTheme);
-    }
-  });
-</script>
+
+    <footer>
+        <div class="container">
+            © <span id="y"></span> Collin L. Lidstrom · <a href="/humans.txt">humans.txt</a> · <a
+                href="/privacy-policy.txt">Privacy</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('y').textContent = new Date().getFullYear();
+
+        // Theme toggle functionality
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+
+            // Update icon visibility
+            updateThemeIcon(newTheme);
+        }
+
+        function updateThemeIcon(theme) {
+            const sunPath = document.querySelector('.theme-toggle .sun');
+            const moonPath = document.querySelector('.theme-toggle .moon');
+
+            if (theme === 'dark') {
+                sunPath.style.display = 'none';
+                moonPath.style.display = 'block';
+            } else {
+                sunPath.style.display = 'block';
+                moonPath.style.display = 'none';
+            }
+        }
+
+        // Initialize theme
+        const savedTheme = localStorage.getItem('theme') ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (!localStorage.getItem('theme')) {
+                const newTheme = e.matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                updateThemeIcon(newTheme);
+            }
+        });
+    </script>
 </body>
+
 </html>
