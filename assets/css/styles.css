@@ -1,6 +1,31 @@
 
 /* Minimal, clean stylesheet for Collin Lidstrom */
-:root { --fg:#0b1220; --muted:#5b6475; --bg:#fff; --accent:#2563eb; }
+:root {
+  --fg: #0b1220;
+  --muted: #5b6475;
+  --bg: #fff;
+  --accent: #2563eb;
+  --border: #e5e7eb;
+  --btn-bg: #f8fafc;
+  --btn-hover: #eef2ff;
+  --kbd-bg: #eef2ff;
+  --kbd-border: #c7d2fe;
+  --badge-color: #334155;
+}
+
+[data-theme="dark"] {
+  --fg: #e5e7eb;
+  --muted: #9ca3af;
+  --bg: #111827;
+  --accent: #60a5fa;
+  --border: #374151;
+  --btn-bg: #1f2937;
+  --btn-hover: #374151;
+  --kbd-bg: #1f2937;
+  --kbd-border: #374151;
+  --badge-color: #d1d5db;
+}
+
 * { box-sizing: border-box; }
 html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.55 ui-sans-serif, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
 a { color:var(--accent); text-decoration:none; }
@@ -16,8 +41,22 @@ nav .links a { margin-left:16px; font-weight:600; }
 .card { border:1px solid #e5e7eb; border-radius:14px; padding:16px; }
 .card h3 { margin:0 0 8px; font-size:18px; }
 footer { border-top:1px solid #e5e7eb; margin-top:48px; padding:24px 0; color:var(--muted); font-size:14px; }
-.btn { display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid #e5e7eb; background:#f8fafc; }
-.btn:hover { background:#eef2ff; text-decoration:none; }
-kbd { background:#eef2ff; border:1px solid #c7d2fe; padding:2px 6px; border-radius:6px; font-size:12px; }
+.btn { display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid var(--border); background:var(--btn-bg); color:var(--fg); }
+.btn:hover { background:var(--btn-hover); text-decoration:none; }
+kbd { background:var(--kbd-bg); border:1px solid var(--kbd-border); padding:2px 6px; border-radius:6px; font-size:12px; }
 ul.inline { list-style:none; padding:0; margin:0; display:flex; gap:12px; flex-wrap:wrap; }
-.badge { display:inline-block; padding:2px 8px; border:1px solid #e5e7eb; border-radius:999px; font-size:12px; color:#334155; background:#f8fafc;}
+.badge { display:inline-block; padding:2px 8px; border:1px solid var(--border); border-radius:999px; font-size:12px; color:var(--badge-color); background:var(--btn-bg); }
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--fg);
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.theme-toggle:hover {
+  background: var(--btn-bg);
+}
