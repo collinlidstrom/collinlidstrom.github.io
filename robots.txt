@@ -1,0 +1,26 @@
+# ============================
+# robots.txt for CollinLidstrom.com
+# Secure but ChatGPT-friendly
+# ============================
+
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /scripts/
+Allow: /
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: ChatGPTBot
+Disallow:
+
+User-agent: GPTBot
+Disallow:
+
+Sitemap: https://www.collinlidstrom.com/sitemap.xml
