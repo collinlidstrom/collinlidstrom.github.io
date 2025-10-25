@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Collin L. Lidstrom | Software Engineer</title>
-    <meta name="description" content="The personal site of Collin L. Lidstrom — software engineer, creator, and builder of modern web solutions." />
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/YOUR_GITHUB_USER_ID" />
-  </head>
-  <body style="font-family: system-ui, sans-serif; margin: 40px; color: #222;">
-    <header>
-      <h1>Collin L. Lidstrom</h1>
-      <h2>Software Engineer</h2>
-    </header>
-    <main>
-      <p>Welcome to my personal site — a space for my work, projects, and thoughts.</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/collinlidstrom">LinkedIn</a></li>
-        <li><a href="https://github.com/collinlidstrom">GitHub</a></li>
-        <li><a href="/projects">Projects</a> (coming soon)</li>
-        <li><a href="/contact">Contact</a> (coming soon)</li>
-      </ul>
-    </main>
-    <footer style="margin-top: 3rem; font-size: 0.9rem; color: #666;">
-      © <script>document.write(new Date().getFullYear())</script> Collin L. Lidstrom
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Collin L. Lidstrom — Software Engineer</title>
+  <meta name="description" content="Personal site for Collin L. Lidstrom — software engineer. Projects, contact, and links." />
+  <link rel="canonical" href="https://www.collinlidstrom.com/" />
+  <link rel="icon" href="https://www.github.com/fluidicon.png" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  
+<nav class="container">
+  <div class="brand"><a href="/">Collin L. Lidstrom</a></div>
+  <div class="links">
+    <a href="/projects/">Projects</a>
+    <a href="/contact/">Contact</a>
+    <a href="https://www.linkedin.com/in/collinlidstrom" rel="me">LinkedIn</a>
+    <a href="https://github.com/collinlidstrom" rel="me">GitHub</a>
+  </div>
+</nav>
+
+  <header class="hero container">
+    <h1>Hi, I’m Collin — I build clean, fast software.</h1>
+    <p>Welcome to my GitHub Pages site. Explore selected projects, reach out, and learn more about my work.</p>
+    <div style="margin-top:18px;">
+      <a class="btn" href="/projects/">Browse projects</a>
+      <a class="btn" href="/contact/" style="margin-left:8px;">Get in touch</a>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>Highlights</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Recent Work</h3>
+        <p>Short showcase of a recent build or experiment. Replace this with your latest project.</p>
+        <ul class="inline"><li class="badge">TypeScript</li><li class="badge">React</li><li class="badge">Cloudflare</li></ul>
+      </div>
+      <div class="card">
+        <h3>Open Source</h3>
+        <p>Link to a repo you’re proud of, or a contribution highlight.</p>
+        <p><a href="https://github.com/collinlidstrom" class="btn">GitHub Profile</a></p>
+      </div>
+      <div class="card">
+        <h3>Resume</h3>
+        <p>Add a link to a PDF in this repo or Google Drive.</p>
+        <p><a href="#" class="btn">View Resume</a></p>
+      </div>
+    </div>
+  </section>
+
+  
+<footer>
+  <div class="container">
+    © <span id="y"></span> Collin L. Lidstrom · <a href="/humans.txt">humans.txt</a> · <a href="/privacy-policy.txt">Privacy</a>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</footer>
+
+</body>
 </html>

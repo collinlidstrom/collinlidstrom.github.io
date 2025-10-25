@@ -1,0 +1,5 @@
+/* humans.txt — We are people, not robots */
+Site: CollinLidstrom.com
+Sitemap: https://www.collinlidstrom.com/sitemap.xml
+Robots: https://www.collinlidstrom.com/robots.txt
+Developer: Collin L. Lidstrom — Des Moines, IA
