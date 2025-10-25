@@ -74,3 +74,107 @@ ul.inline { list-style:none; padding:0; margin:0; display:flex; gap:12px; flex-w
 [data-theme="dark"] .date-banner {
   opacity: 0.8;
 }
+
+/* Resume styles */
+.resume-section {
+    margin: 2rem 0;
+}
+
+.resume-section h2 {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.job {
+    margin-bottom: 2rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.job-company {
+    font-weight: 500;
+    color: var(--accent);
+}
+
+.job-date {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.job-description {
+    margin: 1rem 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skill-category {
+    background: var(--btn-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.skill-category h3 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.skill-list li::before {
+    content: "•";
+    color: var(--accent);
+    margin-right: 0.5rem;
+}
+
+.achievements {
+    margin-top: 2rem;
+}
+
+.achievement-card {
+    background: var(--btn-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+}
+
+.objective {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--btn-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+    border: 1px solid var(--border);
+}
