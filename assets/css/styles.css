@@ -34,9 +34,9 @@ a:hover { text-decoration:underline; }
 nav { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 16px 0; }
 nav .brand { font-weight:700; letter-spacing:.2px; }
 nav .links a { margin-left:16px; font-weight:600; }
-.hero { padding: 56px 0 24px; }
+.hero { padding: 120px 0 80px; text-align: center; }
 .hero h1 { font-size: clamp(30px, 5vw, 44px); margin: 0 0 8px; }
-.hero p { margin: 0; color: var(--muted); max-width:680px; }
+.hero p { margin: 0 auto; color: var(--muted); max-width:680px; }
 .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px; margin-top: 24px; }
 .card { border:1px solid #e5e7eb; border-radius:14px; padding:16px; }
 .card h3 { margin:0 0 8px; font-size:18px; }
