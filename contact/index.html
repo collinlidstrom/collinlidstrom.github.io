@@ -3,8 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — Collin L. Lidstrom</title>
-  <link rel="canonical" href="https://www.collinlidstrom.com/contact/" />
+  <title>Contact — Collin Lidstrom</title>
+  <meta name="description" content="Contact Collin Lidstrom to talk about cloud infrastructure, DevOps, platform engineering, or independent projects.">
+      <meta property="og:type" content="website"><meta property="og:title" content="Contact — Collin Lidstrom">
+    <meta property="og:url" content="https://www.collinlidstrom.com/contact/">
+    <meta property="og:image" content="https://www.collinlidstrom.com/assets/og-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://www.collinlidstrom.com/contact/" />
   <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
   <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
@@ -12,83 +17,27 @@
   <meta name="apple-mobile-web-app-title" content="Collin Lidstrom" />
   <link rel="manifest" href="/assets/favicon/site.webmanifest" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/brand.css" />
+    <script src="/assets/js/site.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   
-<nav class="container">
-  <div class="brand"><a href="/">Collin L. Lidstrom</a></div>
-  <div class="links">
-    <a href="/projects/">Projects</a>
-    <a href="/books/">Reading List</a>
-    <a href="/resume/">Resume</a>
-    <a href="/contact/">Contact</a>
-    <a href="https://www.linkedin.com/in/collinlidstrom" rel="me">LinkedIn</a>
-    <a href="https://github.com/collinlidstrom" rel="me">GitHub</a>
-    <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">
-      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-        <path class="sun" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-        <path class="moon" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-      </svg>
-    </button>
-  </div>
-</nav>
+  <nav class="site-nav container" aria-label="Main navigation">
+    <a class="brand" href="/" aria-label="Collin Lidstrom, home"><span class="brand-mark" aria-hidden="true">CL<span>.</span></span><span>Collin Lidstrom</span></a>
+    <div class="nav-actions"><div class="links"><a href="/projects/">Work</a><a href="/resume/">Experience</a><a href="/contact/">Contact</a></div><button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"><span aria-hidden="true">◐</span></button><button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span aria-hidden="true">☰</span></button></div>
+    <div class="mobile-menu" id="mobile-menu" hidden><a href="/projects/">Work</a><a href="/resume/">Experience</a><a href="/contact/">Contact</a><a href="/books/">Reading list</a><a href="https://github.com/collinlidstrom">GitHub ↗</a><a href="https://www.linkedin.com/in/collinlidstrom">LinkedIn ↗</a></div>
+  </nav>
 
-  <main class="container">
-    <h1>Contact</h1>
+  <main class="container" id="main">
+    <h1>Let’s talk.</h1>
     <p>Reach out via email or LinkedIn.</p>
     <p><a class="btn" href="mailto:collin@collinlidstrom.com">collin@collinlidstrom.com</a>
        <a class="btn" href="https://www.linkedin.com/in/collinlidstrom" style="margin-left:8px;">LinkedIn</a></p>
   </main>
   
-<footer>
-  <div class="container">
-    © <span id="y"></span> Collin L. Lidstrom · <a href="/humans.txt">humans.txt</a> · <a href="/privacy-policy.txt">Privacy</a>
-  </div>
-</footer>
+  <footer><div class="container footer-inner"><div><strong>Collin Lidstrom</strong><span>Cloud · DevOps · Platform engineering · AI<br>Des Moines, Iowa</span></div><div class="footer-links"><a href="/books/">Reading list</a><a href="https://github.com/collinlidstrom" rel="me">GitHub ↗</a><a href="https://www.linkedin.com/in/collinlidstrom" rel="me">LinkedIn ↗</a><a href="mailto:collin@collinlidstrom.com">Email ↗</a></div><small>© <span id="y">2026</span> Collin Lidstrom · <a href="/privacy-policy.txt">Privacy</a></small></div></footer>
 
-<script>
-  document.getElementById('y').textContent=new Date().getFullYear();
-  
-  // Theme toggle functionality
-  function toggleTheme() {
-    const html = document.documentElement;
-    const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    
-    // Update icon visibility
-    updateThemeIcon(newTheme);
-  }
-  
-  function updateThemeIcon(theme) {
-    const sunPath = document.querySelector('.theme-toggle .sun');
-    const moonPath = document.querySelector('.theme-toggle .moon');
-    
-    if (theme === 'dark') {
-      sunPath.style.display = 'none';
-      moonPath.style.display = 'block';
-    } else {
-      sunPath.style.display = 'block';
-      moonPath.style.display = 'none';
-    }
-  }
-  
-  // Initialize theme
-  const savedTheme = localStorage.getItem('theme') || 
-    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  document.documentElement.setAttribute('data-theme', savedTheme);
-  updateThemeIcon(savedTheme);
-  
-  // Listen for system theme changes
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (!localStorage.getItem('theme')) {
-      const newTheme = e.matches ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      updateThemeIcon(newTheme);
-    }
-  });
-</script>
+
 </body>
 </html>
