@@ -107,3 +107,39 @@ footer { border-color:var(--border);margin-top:0; }
   .contact-cta { border-radius:0; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .btn,.work-row,.feature-card,.project-card { transition:none; } }
+
+
+/* 2026 brand refresh */
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  min-width:0;
+  color:var(--fg);
+  text-decoration:none;
+  transition:transform .2s ease,opacity .2s ease;
+}
+.brand:hover{transform:translateY(-1px);text-decoration:none;opacity:.92}
+.brand-symbol{
+  width:42px;
+  height:42px;
+  flex:0 0 auto;
+  display:block;
+  filter:drop-shadow(0 8px 16px rgba(20,94,255,.14));
+}
+.brand-wordmark{
+  display:inline-flex;
+  align-items:baseline;
+  font-size:1.05rem;
+  line-height:1;
+  font-weight:780;
+  letter-spacing:-.045em;
+  color:var(--fg);
+}
+.brand-wordmark .brand-domain{color:#1479ff}
+[data-theme="dark"] .brand-symbol{filter:drop-shadow(0 8px 18px rgba(20,121,255,.28))}
+[data-theme="dark"] .brand-wordmark .brand-domain{color:#63a4ff}
+@media (max-width:520px){
+  .brand-symbol{width:38px;height:38px}
+  .brand-wordmark{font-size:.96rem}
+}
