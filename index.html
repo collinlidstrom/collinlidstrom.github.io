@@ -1,190 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Collin L. Lidstrom — Software Engineer</title>
-    <meta name="description"
-        content="Personal site for Collin L. Lidstrom — software engineer. Projects, contact and links." />
-    <link rel="canonical" href="https://www.collinlidstrom.com/" />
-    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Collin Lidstrom" />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Collin Lidstrom — Cloud, DevOps &amp; Platform Engineer</title>
+  <meta name="description" content="Collin Lidstrom builds cloud platforms, infrastructure automation, CI/CD, and developer tooling. Explore selected work and experiments in AI-assisted engineering.">
+  <link rel="canonical" href="https://www.collinlidstrom.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Collin Lidstrom — Cloud, DevOps &amp; Platform Engineer">
+  <meta property="og:description" content="Dependable cloud platforms, automation, developer tooling, and experiments at the intersection of engineering and AI.">
+  <meta property="og:url" content="https://www.collinlidstrom.com/">
+  <meta property="og:image" content="https://www.collinlidstrom.com/assets/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.collinlidstrom.com/assets/og-card.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/brand.css">
+  <script src="/assets/js/site.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Collin Lidstrom","url":"https://www.collinlidstrom.com/","sameAs":["https://github.com/collinlidstrom","https://www.linkedin.com/in/collinlidstrom"],"jobTitle":"Cloud and DevOps Engineer","knowsAbout":["Cloud Computing","DevOps","Platform Engineering","Kubernetes","CI/CD","Infrastructure Automation"]}</script>
 </head>
-
 <body>
-    <nav class="container">
-        <div class="brand"><a href="/">Collin L. Lidstrom</a></div>
-        <div class="links">
-            <a href="/projects/">Projects</a>
-            <a href="/books/">Reading List</a>
-            <a href="/resume/">Resume</a>
-            <a href="/contact/">Contact</a>
-            <a href="https://www.linkedin.com/in/collinlidstrom" rel="me">LinkedIn</a>
-            <a href="https://github.com/collinlidstrom" rel="me">GitHub</a>
-            <button class="theme-toggle" aria-label="Toggle dark mode" onclick="toggleTheme()">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                    <path class="sun"
-                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
-                    </path>
-                    <path class="moon"
-                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
-                    </path>
-                </svg>
-            </button>
-        </div>
-    </nav>
-
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="site-nav container" aria-label="Main navigation">
+    <a class="brand" href="/" aria-label="Collin Lidstrom, home"><span class="brand-mark" aria-hidden="true">CL<span>.</span></span><span>Collin Lidstrom</span></a>
+    <div class="nav-actions"><div class="links"><a href="/projects/">Work</a><a href="/resume/">Experience</a><a href="/contact/">Contact</a></div><button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"><span aria-hidden="true">◐</span></button><button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span aria-hidden="true">☰</span></button></div>
+    <div class="mobile-menu" id="mobile-menu" hidden><a href="/projects/">Work</a><a href="/resume/">Experience</a><a href="/contact/">Contact</a><a href="/books/">Reading list</a><a href="https://github.com/collinlidstrom">GitHub ↗</a><a href="https://www.linkedin.com/in/collinlidstrom">LinkedIn ↗</a></div>
+  </nav>
+  <main id="main">
     <header class="hero container">
-        <div id="current-date" class="date-banner"></div>
-        <h1>Hi, I'm Collin — </h1>
-        <p>Systemwright, Empathic Catalyst, Constraint Surfer, Path Finder</p>
-        <div style="margin-top:18px;">
-            <a class="btn" href="/projects/">Browse projects</a>
-            <a class="btn" href="/contact/" style="margin-left:8px;">Get in touch</a>
-        </div>
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> SENIOR CLOUD &amp; DEVOPS ENGINEER <span class="eyebrow-sep">/</span> DES MOINES, IA</p>
+      <h1>I build infrastructure <em>developers can trust.</em></h1>
+      <p class="hero-copy">I’m Collin Lidstrom. I work across cloud platforms, infrastructure automation, CI/CD, and developer experience—and explore how AI changes the way we build software.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="/projects/">Explore my work <span aria-hidden="true">↗</span></a><a class="btn" href="/resume/">View experience <span aria-hidden="true">→</span></a></div>
+      <div class="hero-meta"><span>Cloud infrastructure</span><span>Platform engineering</span><span>Automation</span><span>AI experiments</span></div>
     </header>
-
-    <section class="container">
-        <h2>Professional Highlights</h2>
-        <div class="grid">
-
-            <div class="card">
-                <h3>Enterprise Software Development</h3>
-                <p>Software Engineer with experience at John Deere, Principal Financial Group and Businessolver,
-                    specializing in full-stack development and cloud solutions.</p>
-                <ul class="inline">
-                    <li class="badge">React</li>
-                    <li class="badge">AWS</li>
-                    <li class="badge">Java</li>
-                    <li class="badge">DevOps</li>
-                </ul>
-                <p><a href="/resume/" class="btn">View Resume</a></p>
-            </div>
-            <div class="card">
-                <h3>Cloud Architecture</h3>
-                <p>AWS Certified Cloud Practitioner with experience in migrating enterprise applications to cloud
-                    infrastructure and implementing modern CI/CD pipelines.</p>
-                <ul class="inline">
-                    <li class="badge">AWS</li>
-                    <li class="badge">Cloud Migration</li>
-                    <li class="badge">CI/CD</li>
-                    <li class="badge">Architecture</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Technical Leadership</h3>
-                <p>Led successful initiatives in application modernization, cloud migration and development of reusable
-                    component libraries. Award winner in hackathons and innovation challenges.</p>
-                <ul class="inline">
-                    <li class="badge">Team Leadership</li>
-                    <li class="badge">System Design</li>
-                    <li class="badge">Innovation</li>
-                </ul>
-            </div>
-        </div>
+    <section class="section container" aria-labelledby="work-title">
+      <div class="section-heading"><p class="section-label">01 / SELECTED WORK</p><h2 id="work-title">Systems, products, experiments.</h2><p>Professional engineering and independent ideas, with each project’s stage made clear.</p></div>
+      <div class="work-list">
+        <a class="work-row" href="/projects/#platform"><span class="work-number">01</span><span><strong>Cloud &amp; platform engineering</strong><small>Infrastructure, delivery, developer experience</small></span><span class="work-type">PROFESSIONAL</span><span class="work-arrow" aria-hidden="true">↗</span></a>
+        <a class="work-row" href="/projects/#devpet"><span class="work-number">02</span><span><strong>devpet</strong><small>A desktop-first pocket pet with personality and pixel art</small></span><span class="work-type">IN DEVELOPMENT</span><span class="work-arrow" aria-hidden="true">↗</span></a>
+        <a class="work-row" href="/projects/#golfsignal"><span class="work-number">03</span><span><strong>GolfSignal</strong><small>A local tee-time discovery and alert concept</small></span><span class="work-type">CONCEPT</span><span class="work-arrow" aria-hidden="true">↗</span></a>
+      </div><a class="text-link" href="/projects/">See all work <span aria-hidden="true">↗</span></a>
     </section>
-
-    <section class="container">
-        <h2>Recent Achievements</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Pro Dispatch Team Lead</h3>
-                <p>Technical liaison at John Deere, leading development of map features and API enhancements for the
-                    Operations Center platform.</p>
-                <ul class="inline">
-                    <li class="badge">Leadership</li>
-                    <li class="badge">API Design</li>
-                    <li class="badge">React</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Cloud Migration Expert</h3>
-                <p>Successfully migrated 10+ business applications to AWS cloud infrastructure, improving scalability
-                    and reducing operational costs.</p>
-                <ul class="inline">
-                    <li class="badge">AWS</li>
-                    <li class="badge">Migration</li>
-                    <li class="badge">Architecture</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Innovation Awards</h3>
-                <p>Principal Cloudathon 2022 runner-up and Businessolver Hackathon 2019 winner, demonstrating technical
-                    excellence and innovation.</p>
-                <ul class="inline">
-                    <li class="badge">Innovation</li>
-                    <li class="badge">Leadership</li>
-                    <li class="badge">TeamWork</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            © <span id="y"></span> Collin L. Lidstrom · <a href="/humans.txt">humans.txt</a> · <a
-                href="/privacy-policy.txt">Privacy</a>
-        </div>
-    </footer>
-
-    <script>
-        // Update copyright year
-        document.getElementById('y').textContent = new Date().getFullYear();
-
-        // Update date banner
-        function formatDate(date) {
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            return new Date(date).toLocaleDateString('en-US', options);
-        }
-        document.getElementById('current-date').textContent = formatDate(new Date());
-
-        // Theme toggle functionality
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-
-            // Update icon visibility
-            updateThemeIcon(newTheme);
-        }
-
-        function updateThemeIcon(theme) {
-            const sunPath = document.querySelector('.theme-toggle .sun');
-            const moonPath = document.querySelector('.theme-toggle .moon');
-
-            if (theme === 'dark') {
-                sunPath.style.display = 'none';
-                moonPath.style.display = 'block';
-            } else {
-                sunPath.style.display = 'block';
-                moonPath.style.display = 'none';
-            }
-        }
-
-        // Initialize theme
-        const savedTheme = localStorage.getItem('theme') ||
-            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-            if (!localStorage.getItem('theme')) {
-                const newTheme = e.matches ? 'dark' : 'light';
-                document.documentElement.setAttribute('data-theme', newTheme);
-                updateThemeIcon(newTheme);
-            }
-        });
-    </script>
+    <section class="section section-tinted" aria-labelledby="expertise-title"><div class="container"><div class="section-heading"><p class="section-label">02 / EXPERTISE</p><h2 id="expertise-title">What I like building.</h2></div><div class="expertise-grid">
+      <article class="feature-card"><span class="card-index">01 / BUILD</span><h3>Cloud platforms</h3><p>Infrastructure designed around reliability, security, and the people who operate it.</p><div class="tech-line">AWS · Kubernetes / EKS · Linux</div></article>
+      <article class="feature-card"><span class="card-index">02 / SHIP</span><h3>Automation &amp; delivery</h3><p>Repeatable delivery workflows that let teams release changes with confidence.</p><div class="tech-line">CI/CD · Ansible · GitHub Actions</div></article>
+      <article class="feature-card"><span class="card-index">03 / EXPLORE</span><h3>AI-assisted engineering</h3><p>Hands-on experiments with developer agents, local models, and practical AI workflows.</p><div class="tech-line">Agents · Developer tools · Automation</div></article>
+    </div></div></section>
+    <section class="section container now-section" aria-labelledby="now-title"><div><p class="section-label">03 / CURRENTLY EXPLORING</p><h2 id="now-title">The next useful thing.</h2></div><div><p>I’m interested in where dependable infrastructure meets new ways of building: agentic development, local AI, and tools that make engineering more effective.</p><a class="text-link" href="/projects/">Visit the lab <span aria-hidden="true">↗</span></a></div></section>
+    <section class="contact-cta container"><p class="section-label">LET’S CONNECT</p><h2>Building something interesting?</h2><p>I’m always up for a thoughtful conversation about cloud platforms, developer tools, or ambitious side projects.</p><a class="btn btn-primary" href="/contact/">Get in touch <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer><div class="container footer-inner"><div><strong>Collin Lidstrom</strong><span>Cloud · DevOps · Platform engineering · AI<br>Des Moines, Iowa</span></div><div class="footer-links"><a href="/books/">Reading list</a><a href="https://github.com/collinlidstrom" rel="me">GitHub ↗</a><a href="https://www.linkedin.com/in/collinlidstrom" rel="me">LinkedIn ↗</a><a href="mailto:collin@collinlidstrom.com">Email ↗</a></div><small>© <span id="y">2026</span> Collin Lidstrom · <a href="/privacy-policy.txt">Privacy</a></small></div></footer>
 </body>
-
 </html>
