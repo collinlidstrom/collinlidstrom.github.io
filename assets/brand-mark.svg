@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+<title>Collin Lidstrom monogram</title>
+<defs>
+  <linearGradient id="g" x1="18" y1="108" x2="108" y2="18" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#071b3e"/>
+    <stop offset=".55" stop-color="#0a4ec7"/>
+    <stop offset="1" stop-color="#13b8ff"/>
+  </linearGradient>
+  <linearGradient id="g2" x1="45" y1="105" x2="94" y2="45" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#071b3e"/>
+    <stop offset="1" stop-color="#1479ff"/>
+  </linearGradient>
+</defs>
+<path fill="url(#g)" d="M18 46 48 16h64L91 37H57L37 57v16l25 25-18 18-26-26A24 24 0 0 1 11 73V63a24 24 0 0 1 7-17Z"/>
+<path fill="url(#g2)" d="M61 50 80 31v53h33L91 106H61Z"/>
+</svg>
